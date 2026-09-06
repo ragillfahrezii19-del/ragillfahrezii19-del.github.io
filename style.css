@@ -271,14 +271,37 @@ nav ul li a.active {
     color: #94a3b8;
 }
 
-.photo-contact{
-    width: 90px;
-    height: 90px;
+.photo-contact {
+    width: 420px;
+    height: 420px;
+    position: relative;
+    padding: 12px; 
+    border: 3px solid #a855f7;
+    border-radius: 16px;
+    overflow: hidden;
+    display: inline-block;
+}
 
-    object-fit: cover;
+.photo-contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('RF.png'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    transform: scale(1.1); 
+    z-index: 0;
+}
 
+.photo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
-    margin: 0 auto 20px;
+    border-radius: 8px;
 }
 
 /* FORM */
