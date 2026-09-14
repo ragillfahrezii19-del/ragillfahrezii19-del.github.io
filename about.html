@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tentang Ragil dan minat serta hobinya.">
+    <title>About Me | Ragil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">Ragil<span>.io</span></a>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-label="Buka menu" aria-expanded="false">☰</button>
+            <ul data-nav-links>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Aktifkan light mode">🌙</button>
+        </nav>
+    </header>
+
+    <main class="page">
+        <div class="page-title reveal">
+            <p class="small-text">GET TO KNOW ME</p>
+            <h1>About <span>Me</span></h1>
+            <p>Mengenal saya, minat, dan beberapa hal yang saya sukai.</p>
+        </div>
+
+        <section class="about">
+            <div class="about-profile reveal">
+                <img src="images/Ragil.jpeg" alt="Foto profil Ragil" class="profile-photo">
+                <h2>Ragil</h2>
+                <p>Mahasiswa Teknik Komputer</p>
+            </div>
+
+            <div class="about-text reveal">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Saya adalah mahasiswa Teknik Komputer yang tertarik pada teknologi,
+                    pemrograman, jaringan komputer, dan digital forensics. Saya terus
+                    belajar melalui perkuliahan, latihan, dan berbagai proyek kecil.
+                </p>
+
+                <h3>My Interests</h3>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                    <span>Networking</span>
+                    <span>Digital Forensics</span>
+                </div>
+
+                <h3>My Hobbies</h3>
+                <div class="skills">
+                    <span>Futsal</span>
+                    <span>Gaming</span>
+                    <span>Hiking</span>
+                    <span>Football</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies-section reveal">
+            <div class="section-heading">
+                <p class="small-text">THINGS I ENJOY</p>
+                <h2>My <span>Hobbies</span></h2>
+                <p>Klik foto untuk melihatnya dalam ukuran lebih besar.</p>
+            </div>
+
+            <div class="hobi-container">
+                <article class="hobi-card">
+                    <img src="images/futsal.jpg" alt="Foto hobi futsal" data-gallery-image data-title="Futsal">
+                    <h3>Futsal</h3>
+                    <p>Futsal adalah salah satu hobi saya sedari kecil.</p>
+                </article>
+                <article class="hobi-card">
+                    <img src="images/gaming.jpg" alt="Foto hobi gaming" data-gallery-image data-title="Gaming">
+                    <h3>Gaming</h3>
+                    <p>Gaming adalah hobi yang saya nikmati saat memiliki waktu luang.</p>
+                </article>
+                <article class="hobi-card">
+                    <img src="images/hiking.jpg" alt="Foto hobi hiking" data-gallery-image data-title="Hiking">
+                    <h3>Hiking</h3>
+                    <p>Jika memiliki waktu luang, saya suka menghabiskannya untuk hiking.</p>
+                </article>
+                <article class="hobi-card">
+                    <img src="images/football2.jpg" alt="Foto hobi football" data-gallery-image data-title="Football">
+                    <h3>Football</h3>
+                    <p>Football saya mainkan bersama teman-teman ketika jumlah pemain cukup banyak.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="photo-section reveal">
+            <div class="section-heading">
+                <p class="small-text">A FEW MOMENTS</p>
+                <h2>My <span>Photos</span></h2>
+            </div>
+            <div class="photo-grid">
+                <img src="images/running.jpg" alt="Ragil saat berlari" data-gallery-image data-title="Running">
+                <img src="images/rf1.jpg" alt="Foto Ragil" data-gallery-image data-title="Photo 1">
+                <img src="images/rf2.jpg" alt="Foto Ragil" data-gallery-image data-title="Photo 2">
+                <img src="images/formal.jpg" alt="Foto formal Ragil" data-gallery-image data-title="Formal">
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Preview foto">
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Tutup">×</button>
+        <div class="lightbox-content">
+            <img src="" alt="" data-lightbox-image>
+            <p data-lightbox-title></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Ragil. All Rights Reserved.</p>
+    </footer>
+
+    <button class="back-top" type="button" data-back-top aria-label="Kembali ke atas">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
