@@ -34,4 +34,4 @@ Web Porto/
     └── running.jpg
 ```
 
-Buka `index.html` di browser untuk menjalankan website.
+

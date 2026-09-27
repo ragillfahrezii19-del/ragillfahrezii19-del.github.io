@@ -116,38 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Escape') closeLightbox();
     });
 
-    // Contact form validation. This is front-end validation only.
-    const contactForm = document.querySelector('[data-contact-form]');
-    const formMessage = document.querySelector('[data-form-message]');
-    if (contactForm) {
-        contactForm.addEventListener('submit', event => {
-            event.preventDefault();
-            const name = contactForm.querySelector('#name');
-            const email = contactForm.querySelector('#email');
-            const message = contactForm.querySelector('#message');
-
-            const errors = [];
-            if (!name.value.trim()) errors.push('Nama belum diisi.');
-            if (!email.value.trim()) errors.push('Email belum diisi.');
-            else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) errors.push('Format email belum benar.');
-            if (!message.value.trim()) errors.push('Pesan belum diisi.');
-
-            if (errors.length) {
-                if (formMessage) {
-                    formMessage.className = 'form-message error';
-                    formMessage.textContent = errors.join(' ');
-                }
-                return;
-            }
-
-            if (formMessage) {
-                formMessage.className = 'form-message success';
-                formMessage.textContent = `Terima kasih, ${name.value.trim()}! Form sudah tervalidasi. Untuk pengiriman nyata, hubungkan form ini ke backend atau layanan form.`;
-            }
-            contactForm.reset();
-        });
-    }
-
     // Reveal animation.
     const revealItems = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
